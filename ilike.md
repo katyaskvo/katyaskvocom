@@ -1,4 +1,5 @@
 ---
+category: I Like
 title: I Like
 permalink: /ilike/
 css_class: ilike

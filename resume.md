@@ -1,4 +1,5 @@
 ---
+category: Resume
 title: Resume
 permalink: /resume/
 css_class: resume

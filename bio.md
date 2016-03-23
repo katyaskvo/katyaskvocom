@@ -1,4 +1,5 @@
 ---
+category: Bio
 title: Bio
 permalink: /bio/
 css_class: bio

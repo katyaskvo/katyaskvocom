@@ -40,7 +40,9 @@ defaults:
       layout: "page"
   -
     scope:
-      path: "projects"
-      type: "pages"
+      path: ""
+      type: "projects"
     values:
       layout: "project"
+      svg_name: laptop
+      category: work
