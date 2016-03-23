@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: katyaskvo
+email: katyaskvo@gmail.com
+description: Personal website of Katya Zdorov.
+# baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /blog/:title/
+# paginate: 5
+# paginate_path: '/blog/page:num'
+url: "http://katyaskvo.com/" # the base hostname & protocol for your site
+# img: "/img"
+
+# Build settings
+markdown: kramdown
+
+collections:
+  projects:
+      output: true
+      permalink: /work/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: Katya Zdorov
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"

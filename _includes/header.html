@@ -1,0 +1,22 @@
+{% capture location %}{{ page.url | split: '/' }}{% endcapture %}
+<header>
+	<div class="wrap">
+		<h1><a href="/">Katya Zdorov</a></h1>
+		<nav>
+			{% for page in site.pages %}
+				{% assign current = page.title | downcase %}
+				{% if page.title %}
+					<a href="{{page.url}}" {% if location == current %}class="active" {% else %} class="nav"{% endif %}>{{page.title}}</a>					
+				{% endif %}
+				
+			{% endfor %}
+		</nav>
+	</div>
+	<div class="banner">
+		<div class="wrap">
+			<img src="{{ page.svg_name | prepend: "/img/" }}.svg" alt="{{ page.svg_name }}" />
+			<h2>{{ page.title }}</h2>
+		</div>
+	</div>
+</header>
+

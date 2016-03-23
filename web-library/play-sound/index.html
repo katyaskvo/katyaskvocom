@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <title>Hide/Show</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+  <!--Buttons-->
+  <div class="wrap">
+	  <a href="javascript:scooter();"><img src="img/scooter.png" alt="Scooter"></a>
+	  <a href="javascript:bikeBell();"><img src="img/bike.png" alt="Bike"></a>
+  </div>
+
+  
+  <!--Audio Files-->
+  <audio id="bikeBell" src="sounds/bikeBell.mp3" preload="auto"></audio>
+  <audio id="scooter" src="sounds/scooter.mp3" preload="auto"></audio>
+  
+
+
+  <!--Javascript-->
+  <script type="text/javascript">
+    function bikeBell() {
+      document.getElementById('bikeBell').play();
+    }
+    function scooter() {
+      document.getElementById('scooter').play();
+    }
+  </script>
+  
+</body>
+</html> 

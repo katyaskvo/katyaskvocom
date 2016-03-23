@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+	
+	<body class="{{ page.css_class }}">
+		{% include header.html %}
+		
+		<div class="wrap">
+				
+		
+			<div class="content">
+			{% for post in site.posts %}
+			  <article>
+				<h3><a title="read the post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+				<div class="post_meta">
+					<b class="post_author">{{ post.author }}</b>
+					<b class="post_separator">|</b>
+					<b class="post_date">{{ post.date | date: "%b %-d, %Y" }}</b>
+				</div>
+				
+				{% if post.image %}
+			    <img src="/img/{{ post.image }}"/>
+			    {% endif %}
+			    {{ post.excerpt }}
+			  </article>
+			{% endfor %}
+			</div>
+		</div>
+		{% include footer.html %}
+	</body>
+	
+</html>

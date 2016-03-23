@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+	
+	<body class="{{ page.css_class }}">
+		{% include header.html %}
+		
+		<div class="wrap {{ page.content_type }}">
+
+			{{ content }}
+			
+		</div>
+		
+		{% include footer.html %}
+	</body>
+	
+</html>

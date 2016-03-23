@@ -1,0 +1,29 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	padding: 1.5em 0;
+	margin: 0;
+	line-height: 1.5;
+}
+.wrapper {
+	max-width: 640px;
+	margin: 0 auto;
+}
+h1, h2 {
+	line-height: 1;
+}
+h3, p, ol {
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+}
+h1 {
+	font-size: 3em;
+	margin: 1em 0;
+}
+h2 {
+	font-size: 1.5em;
+	margin: 0 0 1em 0;
+}
+h3 {
+	text-transform: uppercase;
+}

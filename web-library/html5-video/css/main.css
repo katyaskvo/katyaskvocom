@@ -1,0 +1,32 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+}
+
+h1 {
+	text-align: center;
+}
+.wrapper {
+	max-width: 640px;
+	margin: 0 auto;
+}
+.video-wrapper {
+	position: relative;
+	max-width: 640px;
+	margin: 0 auto;
+}
+figure {
+	margin: 0 !important;
+}
+video, canvas, object {
+	max-width: 640px;
+	max-height: 640px;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+video, object {
+    height: 100%;
+    position: absolute;
+}

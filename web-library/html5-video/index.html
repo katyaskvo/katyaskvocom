@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:320,700,600,300,800' rel='stylesheet' type='text/css'>
+		<title>Responsible HTML5 Video</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Nunito:320,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	    <h1>Responsible HTML5 Video</h1>
+	    
+	    <div class="wrapper">
+			<div class="video-wrapper">
+				<figure>
+					<canvas width="320" height="320"></canvas>
+					<video controls preload="metadata" poster="img/grand_canyon.jpg" width="320" height="320">
+						<source src="video/grand_canyon.mp4" type="video/mp4">
+						<source src="video/grand_canyon.webm" type="video/webm">
+						<source src="video/grand_canyon.ogg" type="video/ogg">
+						<!-- Flash fallback -->
+						<object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/grand_canyon.mp4" width="320" height="320">
+							<param name="movie" value="flash-player.swf?videoUrl=video/grand_canyon.mp4" />
+							<param name="allowfullscreen" value="true" />
+							<param name="wmode" value="transparent" />
+							<param name="flashvars" value="controlbar=over&amp;image=img/grand_canyon.jpg&amp;file=flash-player.swf?videoUrl=video/grand_canyon.mp4" />
+							<img alt="Tears of Steel poster image" src="img/grand_canyon.jpg" width="320" height="320" title="No video playback possible, please download the video from the link below" />
+						</object>
+						<!-- Offer download -->
+						<a href="video/grand_canyon.mp4">Download MP4</a>
+					</video>
+					<figcaption>Morning in the Grand Canyon</figcaption>
+				</figure> 
+			</div>     
+		</div>
+	</body>
+</html>
+
+
+
+
+
