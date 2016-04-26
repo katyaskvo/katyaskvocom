@@ -36,9 +36,9 @@ description: "Developed website for a Spanish language school based on provided 
 <div class='content'>
 <picture>
 	<!--[if IE 9]><video style="display: none;"><![endif]-->
-	<source srcset="img/casetta-rossa1.jpg">
+	<source srcset="../img/work/casetta-rossa/casetta-rossa1.jpg">
 	<!--[if IE 9]></video><![endif]-->
-	<img srcset="img/casetta-rossa1.jpg" alt="screenshot of casetta-rossa.com home page">
+	<img srcset="../img/work/casetta-rossa/casetta-rossa1.jpg" alt="screenshot of casetta-rossa.com home page">
 </picture>					
 </div>
 </div>
