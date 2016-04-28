@@ -16,9 +16,9 @@
 					<a title="read the post" href="{{ project.url | prepend: site.baseurl }}">
 						<picture>
 							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							<source srcset="/img/work/{{ project.image }}, /img/work/{{ project.image@2x }} 2x">
+							<source srcset="/img/work/{{ project.project_name }}/{{ project.image }}, /img/work/{{ project.project_name }}/{{ project.image_retina }} 2x">
 							<!--[if IE 9]></video><![endif]-->
-							<img srcset="/img/work/{{ project.image }}, /img/work/{{ project.image@2x }} 2x" alt="{{ project.image_alt }}">
+							<img srcset="/img/work/{{ project.project_name }}/{{ project.image }}, /img/work/{{ project.project_name }}/{{ project.image_retina }} 2x" alt="{{ project.image_alt }}">
 			
 							<div class="info">
 								<p>{{ project.description }}</p>
