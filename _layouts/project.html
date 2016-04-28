@@ -8,8 +8,48 @@
 		
 		<article class="wrap project-article">
 			<h3>{{ page.title }}</h3>
-			{{ content }}
-			<div class="button"><a class="rocket green" href="http://courier.com">courier.com</a></div>
+			<section class="describtion">
+				<div class="overall">
+					<h4>Role</h4>
+					<p>{{ page.role }}</p>
+					<h4>Date</h4>
+					<p>{{ page.project_date }}</p>
+					<h4>Project Deliverable</h4>
+					<p>{{ page.project_deliverable }}</p>
+					<h4>Project overview</h4>
+					<p>{{ page.project_overview }}</p>
+				</div>
+				<div class="specifics">
+				<h4>Project specifics:</h4>
+					<ul>
+					{% for spec in page.project_specifics %}
+					  <li>{{ spec }}</li>
+					{% endfor %}
+					</ul>
+				</div>
+				<div class="button"><a class="rocket green" href="http://{{ page.project_url }}">{{ page.project_url }}</a></div>
+			</section>
+			
+			{% for screenshot in page.project_screenshots %}
+			<section class="screenshot">
+				<div class='browser-window'>
+				    <div class='top-bar'>
+				      <div class='circles'>
+				         <div class="circle circle-red"></div><div class="circle circle-yellow"></div><div class="circle circle-green"></div>
+				      </div>
+				    </div>
+				    <div class='content'>
+						<picture>
+							<!--[if IE 9]><video style="display: none;"><![endif]-->
+							<source srcset="{{ site.baseurl }}/img/work/{{ page.project_name }}/{{ screenshot }}">
+							<!--[if IE 9]></video><![endif]-->
+							<img srcset="{{ site.baseurl }}/img/work/{{ page.project_name }}/{{ screenshot }}" alt="screenshot of {{ page.project_url }}">
+						</picture>					
+				    </div>
+				</div>
+			</section>
+			{% endfor %}
+			<div class="button"><a class="rocket green" href="http://{{ page.project_url }}">{{ page.project_url }}</a></div>
 		</article>
 		
 		{% include footer.html %}
