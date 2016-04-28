@@ -1,3 +1,4 @@
+<!--
 ---
 layout: page
 category: Blog
@@ -18,3 +19,40 @@ css_class: blog
   </div>
 
 </article>
+-->
+
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+	
+	<body class="{{ page.css_class }}">
+		{% include header.html %}
+		
+		<div class="wrap">
+				
+		
+			<div class="content">
+			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+				<h3>{{ page.title }}</h3>
+				<div class="post_meta">
+					<b class="post_author">{{ page.author }}</b>
+					<b class="post_separator">|</b>
+					<b class="post_date">{{ page.date | date: "%b %-d, %Y" }}</b>
+				</div>
+							
+				{% if page.image %}
+				<img src="/img/{{ page.image }}"/>
+				{% endif %}
+				<div class="post-content" itemprop="articleBody">
+				{{ content }}
+				</div>
+			
+			</article>
+			</div>
+		</div>
+		{% include footer.html %}
+	</body>
+	
+</html>
+

@@ -34,6 +34,8 @@ defaults:
     values:
       author: Katya Zdorov
       layout: "post"
+      css_class: "blog"
+      svg_name: notebook
   -
     scope:
       path: ""

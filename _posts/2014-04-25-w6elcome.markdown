@@ -1,0 +1,7 @@
+---
+title:  "Play sound"
+date:   2015-06-24 15:39:49 -0800
+---
+<p>Most of children's books are ugly and I definitely want to make my own. Here's what I did in 20 minutes. Click the image to view very first page :)</p>
+<a href="http://katyaskvo.com/web-library/play-sound/"><img src="../../img/blog/play-sound.png" alt="Bike and Scooter"></a>
+<p><a href="http://katyaskvo.com/web-library/play-sound/">Demo</a></p>
