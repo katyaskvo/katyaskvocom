@@ -20,9 +20,10 @@
 				</div>
 				
 				{% if post.image %}
-			    <img src="/img/{{ post.image }}"/>
+			    <img src="/img/blog/{{ post.image }}"/>
 			    {% endif %}
 			    {{ post.excerpt }}
+			    <a class="green" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
 			  </article>
 			{% endfor %}
 			

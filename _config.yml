@@ -12,6 +12,7 @@ description: Personal website of Katya Zdorov.
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
 permalink: /blog/:title/
 url: "http://katyaskvo.com/" # the base hostname & protocol for your site
+blog_assets: "/img/blog/"
 
 # img: "/img"
 
