@@ -79,5 +79,5 @@ svg_name: gears
 		<h4>Education</h4>
 		<p>Studied fashion design at Novosibirsk Institute of Technology (Moscow State University of Design and Technology Branch)</p>
 	</section>
-	<div class="button"><a class="green" href="/katya-zdorov-resume.pdf">download as</a></div>
+	<div class="button-wrapper center"><a class="button green" href="/katya-zdorov-resume.pdf">download as</a></div>
 </article>

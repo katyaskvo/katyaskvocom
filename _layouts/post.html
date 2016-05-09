@@ -13,9 +13,9 @@
 			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 				<h3>{{ page.title }}</h3>
 				<div class="post_meta">
-					<b class="post_author">{{ page.author }}</b>
-					<b class="post_separator">|</b>
-					<b class="post_date">{{ page.date | date: "%b %-d, %Y" }}</b>
+<!-- 					<b class="post_author">{{ page.author }}</b> -->
+<!-- 					<b class="post_separator">|</b> -->
+					<span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
 				</div>
 							
 				<div class="post-content" itemprop="articleBody">
@@ -23,6 +23,9 @@
 				</div>
 			
 			</article>
+			<div class="button-wrapper center">
+				<a class="button green back" href="/blog">back to blog</a>
+			</div>
 			</div>
 		</div>
 		{% include footer.html %}

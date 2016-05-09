@@ -1,6 +1,6 @@
 ---
 title: "CSS substring matching attribute selectors"
-date: 2015-06-02 15:39:49 -0800
+date: 2015-12-08 15:39:49 -0800
 image: list-of-links.png
 ---
 

@@ -14,16 +14,21 @@
 			  <article>
 				<h3><a title="read the post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 				<div class="post_meta">
+<!--
 					<b class="post_author">{{ post.author }}</b>
 					<b class="post_separator">|</b>
-					<b class="post_date">{{ post.date | date: "%b %-d, %Y" }}</b>
+-->
+					<span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
 				</div>
 				
-				{% if post.image %}
+			    {{ post.excerpt }}
+			    {% if post.image %}
 			    <img src="/img/blog/{{ post.image }}"/>
 			    {% endif %}
-			    {{ post.excerpt }}
-			    <a class="green" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+
+			    <div class="button-wrapper">
+				    <a class="button green read-more" href="{{ post.url | prepend: site.baseurl }}">read more</a>
+			    </div>
 			  </article>
 			{% endfor %}
 			

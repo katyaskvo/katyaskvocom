@@ -37,6 +37,7 @@ defaults:
       layout: "post"
       css_class: "blog"
       svg_name: notebook
+      category: blog
   -
     scope:
       path: ""

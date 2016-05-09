@@ -1,5 +1,5 @@
 ---
-title: "Vertical Rhythm"
+title: "Handy tool for adjusting vertical rhythm"
 date: 2015-06-02 15:39:49 -0800
 image: vertical-rhythm.png
 ---
