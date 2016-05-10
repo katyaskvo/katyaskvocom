@@ -83,7 +83,7 @@ $default-text-shadow-v-offset: 0px;
 @include border-box-sizing;
 html {
 	height: 100%;
-	
+	font-size:100%;
 }
 * {
 	@include selection($green, $white);
@@ -119,7 +119,7 @@ body {
 			@include transition-all(0.3s);
 		}
 		&#name {
-			background: black;
+			background: $black;
 			color: $beidge;
 			@include flexbox((order: 1));
 			@include flex-direction(column);
@@ -234,7 +234,7 @@ body {
 			@include flex-wrap(nowrap);
 			&[data-title]:hover:after {
 				background: $bio;
-				color: black;
+				color: $black;
 				line-height: 1.2em;
 				font-weight: 400;
 			}
@@ -469,9 +469,11 @@ p {
 }
 article {
 	padding: 0 0 rhythm(1) 0;
+/*
 	&:first-child {
 		padding-top: rhythm(1);
 	}
+*/
 	h1 {
 	@include adjust-font-size-to($h1-fz);
 	}
@@ -549,19 +551,19 @@ article {
 		@include clearfix;
 	}
 	article {
-// 		border-bottom: 3px solid $text-dark;
+		border-bottom: 4px solid $text-dark;
 		margin-bottom: rhythm(2);
 		padding-bottom: 0;
 		h3 {
 			a {
-				color: $green;
+				color: $text-dark;
 				position: relative;
 				display: block;
 				text-decoration: underline;
 				@include transition-property(color);
 				@include transition-duration(0.3s);
 				&:hover {
-					color: $text-dark;
+					color: darken($blog, 15%);
 					&:after {
 						background-color: $text-dark;
 					}
@@ -862,7 +864,7 @@ article {
 			
 		.resent-projects {
 			a {
-				color: black;
+				color: $black;
 				text-align: center;
 				font-size: 0.875em;
 				@include transition-property(all);
@@ -937,7 +939,7 @@ article {
 					a {
 						width: 100%;
 						line-height: 30px;
-						color: black;
+						color: $black;
 						
 					}
 					&:nth-child(2n + 2) {
@@ -1199,32 +1201,6 @@ footer {
 		font-size: 1rem !important;
 		margin: 0 !important;
 	}
-/*
-	.social {
-		font-size: 2rem;
-		margin: 10px 0;
-		li {
-			display: inline-block;
-			margin: 0 10px;
-		}
-		a {
-			@include transition-property(color);
-			@include transition-duration(0.5s);
-			color: darken($gray,30%);
-			&:hover {
-				color: black;
-				@include transition-property(color);
-				@include transition-duration(0.3s);
-			}
-			span {
-				text-indent: -999999px;
-				height: 0;
-				width: 0;
-				display: inline-block;
-			}
-		}
-	}
-*/
 }
 	.social {
 		font-size: 2rem;
@@ -1238,7 +1214,7 @@ footer {
 			@include transition-duration(0.5s);
 			color: darken($gray,30%);
 			&:hover {
-				color: black;
+				color: $black;
 				@include transition-property(color);
 				@include transition-duration(0.3s);
 			}
@@ -1300,9 +1276,12 @@ $yellow: #ffbd2e;
 	}
 }
 .button-wrapper {
-	margin: rhythm(1) 0;
+	padding: rhythm(1) 0;
 	&.center {
 		text-align: center;
+	}
+	&.right {
+		text-align: right;
 	}
 }
 .button {
@@ -1312,22 +1291,24 @@ $yellow: #ffbd2e;
 	border: none;
 	@include border-radius(5px);
 	color: $white;
-	font-family: $lato !important;
+	font-family: $text-header !important;
 	height: rhythm(2);
 	line-height: rhythm(2) !important;
 	padding: 0 rhythm(1);
 	font-family: $text;
+	font-size: 1rem;
+	vertical-align: middle;
 	@include clearfix;
 	@include transition-property(all);
 	@include transition-duration(0.2s);
-		@extend .fa;
-		&:before {
-			font-family: "FontAwesome";
-			/* padding-right: 6px; */
-			float: right;
-			padding-left: 10px;
-			line-height: rhythm(2);
-		}
+	@extend .fa;
+	&:before {
+		font-family: "FontAwesome";
+		/* padding-right: 6px; */
+		float: right;
+		padding-left: 10px;
+		line-height: rhythm(2);
+	}
 	&[href$=".pdf"]{
 		@extend .fa-file-pdf-o;
 		&:before {
@@ -1352,9 +1333,10 @@ $yellow: #ffbd2e;
 		@extend .fa-envelope;
 	}		
 	&.green{
-		background: $green;
+		background: darken($black, 7%);
 		&:hover {
-			background: darken($green, 7%);
+			background: darken($bio, 3%);
+			color: $black;
 		}
 	}
 }
