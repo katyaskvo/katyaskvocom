@@ -1,0 +1,195 @@
+$unit: 15px;
+
+@mixin unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8) {
+	.top {
+		.core {
+			bottom: 0;
+			right: 0;
+			box-shadow:
+				0 0 0 $unit $color8,
+				0 0 0 $unit*2 $color7,
+				0 0 0 $unit*3 $color6,
+				0 0 0 $unit*4 $color5,
+				0 0 0 $unit*5 $color4,
+				0 0 0 $unit*6 $color3,
+				0 0 0 $unit*7 $color2,
+				0 0 0 $unit*8 $color1;
+				border-radius: 100% 0 0 0;
+		}
+	}
+	.bottom {
+		.core {
+			top: 0;
+			left: 0;
+			box-shadow:
+				0 0 0 $unit $color1,
+				0 0 0 $unit*2 $color2,
+				0 0 0 $unit*3 $color3,
+				0 0 0 $unit*4 $color4,
+				0 0 0 $unit*5 $color5,
+				0 0 0 $unit*6 $color6,
+				0 0 0 $unit*7 $color7,
+				0 0 0 $unit*8 $color8;
+				border-radius: 0 0 100% 0;
+		}
+	}
+	&:nth-of-type(2n + 2) {
+		.top {
+			.core {
+				bottom: 0;
+				left: 0;
+				box-shadow:
+					0 0 0 $unit $color8,
+					0 0 0 $unit*2 $color7,
+					0 0 0 $unit*3 $color6,
+					0 0 0 $unit*4 $color5,
+					0 0 0 $unit*5 $color4,
+					0 0 0 $unit*6 $color3,
+					0 0 0 $unit*7 $color2,
+					0 0 0 $unit*8 $color1;
+					border-radius: 0 100% 0 0;
+			}
+		}
+		.bottom {
+			.core {
+				top: 0;
+				right: 0;
+				left: auto !important;
+				box-shadow:
+					0 0 0 $unit $color1,
+					0 0 0 $unit*2 $color2,
+					0 0 0 $unit*3 $color3,
+					0 0 0 $unit*4 $color4,
+					0 0 0 $unit*5 $color5,
+					0 0 0 $unit*6 $color6,
+					0 0 0 $unit*7 $color7,
+					0 0 0 $unit*8 $color8;
+					border-radius: 0 0 0 100%;
+			}
+		}
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	position: relative;
+}
+body {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.pattern-unit {
+	float: left;
+	 > div {
+		display: block;
+		height: $unit * 9;
+		width: $unit * 10;
+		overflow: hidden;
+		position: relative;
+	}
+	.core {
+		position: absolute;
+		height: $unit;
+		width: $unit;
+	}
+}
+.orange-theme {
+	$background-color: #fe8f1c;
+	$color1: #ba5c40;
+	$color2: #c95c35;
+	$color3: #e26628;
+	$color4: #ee7421;
+	$color5: #f98413;
+	$color6: #ff9115;
+	$color7: #feac02;
+	$color8: #ffba02;
+
+	background-color: $background-color;
+
+	.pattern-unit{
+	
+		@include unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8);
+	}
+}
+
+.pink-theme {
+	$background-color: #ff6d92;
+	$color1: #ff2a49;
+	$color2: #ff3453;
+	$color3: #fe4362;
+	$color4: #fc5478;
+	$color5: #ff7396;
+	$color6: #ffa1ba;
+	$color7: #ffb5c5;
+	$color8: #ffc4d6;
+
+	background-color: $background-color;
+
+	.pattern-unit{
+	
+		@include unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8);
+	}
+}
+
+.purple-theme {
+	$background-color: #94558e;
+	$color1: #361743;
+	$color2: #51295d;
+	$color3: #5a2e63;
+	$color4: #67386e;
+	$color5: $background-color;
+	$color6: #a16599;
+	$color7: #b774a9;
+	$color8: #c179a7;
+
+	background-color: $background-color;
+
+	.pattern-unit{
+	
+		@include unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8);
+	}
+}
+
+.blue-theme {
+	$background-color: #2c51a2;
+	$color1: #181a53;
+	$color2: #171d5b;
+	$color3: #212a77;
+	$color4: #203a84;
+	$color5: $background-color;
+	$color6: #4d76c6;
+	$color7: #5382d2;
+	$color8: #79ace1;
+
+	background-color: $background-color;
+
+	.pattern-unit{
+	
+		@include unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8);
+	}
+}
+
+.multicolor-theme {
+	$background-color: #923b66;
+	$color1: #ff6913;
+	$color2: #ff5127;
+	$color3: #fe4542;
+	$color4: #f83a60;
+	$color5: $background-color;
+	$color6: #4f4083;
+	$color7: #2887a3;
+	$color8: #196e8d;
+
+	background-color: $background-color;
+
+	.pattern-unit{
+	
+		@include unit-colors($unit, $color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8);
+	}
+}
