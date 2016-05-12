@@ -1,6 +1,6 @@
 ---
 title: "Caffeine Machine Game"
-date: 2016-04-06 15:39:49 -0800
+date: 2016-05-03 15:39:49 -0800
 image: caffeine-machine/caffeine_machine@2x.png
 ---
 I've got this [exercise](https://www.thumbtack.com/challenges/slot-machine "Web game - Caffeine Machine") as a part of interview process at  [Thumbtack](https://www.thumbtack.com/). There was no design provided, I was absolutely free to build whatever I want. I wanted to use CSS 3D transform, use as little images as possible, make it to look good and fun to play.
