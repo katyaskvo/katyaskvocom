@@ -1,0 +1,102 @@
+// SVG animation
+
+
+// ILIKE
+@keyframes heart-beat {
+  0% {
+	opacity:0;
+	transform: scale(0);
+  }
+  60% {
+	opacity: 1;
+	transform: scale(1); 
+  }
+  71% {
+	transform: scale(0.8); 
+  }
+  80% {
+	transform: scale(1); 
+  }
+  91% {
+	transform: scale(0.8);
+  }
+  100% {
+	transform: scale(1); 
+  }
+}
+#heart-big, #heart-small {
+	transform-origin: 50% 50%;
+	transform: scale(0);
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+#heart-big {
+	animation-name: heart-beat;
+}
+#heart-small {
+	animation-name: heart-beat;
+	animation-delay: 2s;
+	transform-origin: 253px 25px;
+}
+#heart-big, #heart-small {
+	animation-fill-mode: forwards;
+}
+
+// WORK
+@keyframes laptop-open-cover {
+	0% {
+		transform: perspective(450px) rotateX(-90deg);
+	}
+	100% {
+		transform: perspective(450px) rotateX(0deg);
+	}
+}
+@keyframes grow {
+	0% {
+		transform: scale(0);
+	}
+	30% {
+		transform: scale(1.5);
+	}
+	60% {
+		transform: scale(0.9);
+	}
+}
+@keyframes turn {
+	0% {
+		transform: rotate(0deg) scale(0);
+	}
+	100% {
+		transform: rotate(720deg) scale(1);
+	}
+}
+
+.svg-container { 
+  width: 260px;
+  height: 225px;
+  position: relative;
+  perspective: 450px;
+}
+
+#laptop-cover {
+/*
+	transform-origin: 130px 168px;
+	transform-origin: bottom;
+	animation: laptop-open-cover 1.5s ease-out backwards;
+	animation-delay: 1s;
+*/
+	transform-style: preserve-3d;
+	transform: rotateX(-60deg);
+	transform-origin: 130px 168px;
+}
+.angle-bracket, #slash {
+	transform-origin: center 104px;
+}
+.angle-bracket {
+	animation: grow 0.5s ease-out backwards;
+	animation-delay: 2s;
+}
+#slash {
+	animation: turn 0.5s ease-out backwards;
+	animation-delay: 2s;
+}
