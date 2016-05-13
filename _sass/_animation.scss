@@ -1,6 +1,55 @@
 // SVG animation
 
 
+// BIO
+
+$pine-color: #059154;
+$young-pine-color: #15ca44;
+@keyframes tree-grow {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1); 
+	}
+}
+
+.pine {
+	transform: scale(0);
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	fill: $pine-color;
+}
+#pine-l {
+	transform-origin: 65px 224px;
+}
+#pine-m {
+	animation-delay: 0.5s;
+	transform-origin: 171px 179px;
+}
+#pine-s {
+	animation-delay: 1s;
+	transform-origin: 116px 66px;
+}
+#pine-s1 {
+	animation-delay: 1.5s;
+	animation-duration: 0.3s;
+	transform-origin: 176px 49px;
+}
+#pine-s2 {
+	animation-delay: 1.8s;
+	animation-duration: 0.3s;
+	transform-origin: 31px 74px;
+}
+.pine {
+	animation-name: tree-grow;
+}
+.pine {
+	animation-fill-mode: forwards;
+}
+
+
+
 // ILIKE
 @keyframes heart-beat {
   0% {
