@@ -94,10 +94,16 @@ $young-pine-color: #15ca44;
 // WORK
 @keyframes laptop-open-cover {
 	0% {
-		transform: perspective(450px) rotateX(-90deg);
+		transform: rotateX(-90deg);
+	}
+	75% {
+		transform: rotateX(0deg);
+	}
+	90% {
+		transform: rotateX(10deg);
 	}
 	100% {
-		transform: perspective(450px) rotateX(0deg);
+		transform: rotateX(0deg);
 	}
 }
 @keyframes grow {
@@ -128,24 +134,21 @@ $young-pine-color: #15ca44;
 }
 
 #laptop-cover {
-/*
-	transform-origin: 130px 168px;
-	transform-origin: bottom;
-	animation: laptop-open-cover 1.5s ease-out backwards;
-	animation-delay: 1s;
-*/
+	transform-origin: 50% 168px;
+	transform-origin: 130px 168px;	
+	animation: laptop-open-cover 1s ease-in;
 	transform-style: preserve-3d;
-	transform: rotateX(-60deg);
-	transform-origin: 130px 168px;
+	transform: rotateX(-90deg);
+	animation-fill-mode: forwards;
 }
 .angle-bracket, #slash {
 	transform-origin: center 104px;
 }
 .angle-bracket {
 	animation: grow 0.5s ease-out backwards;
-	animation-delay: 2s;
+	animation-delay: 1s;
 }
 #slash {
 	animation: turn 0.5s ease-out backwards;
-	animation-delay: 2s;
+	animation-delay: 1.2s;
 }

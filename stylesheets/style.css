@@ -3338,10 +3338,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @keyframes laptop-open-cover {
   0% {
-    transform: perspective(450px) rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+  75% {
+    transform: rotateX(0deg);
+  }
+  90% {
+    transform: rotateX(10deg);
   }
   100% {
-    transform: perspective(450px) rotateX(0deg);
+    transform: rotateX(0deg);
   }
 }
 @keyframes grow {
@@ -3363,7 +3369,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: rotate(720deg) scale(1);
   }
 }
-/* line 123, ../_sass/_animation.scss */
+/* line 129, ../_sass/_animation.scss */
 .svg-container {
   width: 260px;
   height: 225px;
@@ -3371,34 +3377,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   perspective: 450px;
 }
 
-/* line 130, ../_sass/_animation.scss */
+/* line 136, ../_sass/_animation.scss */
 #laptop-cover {
-  /*
-  	transform-origin: 130px 168px;
-  	transform-origin: bottom;
-  	animation: laptop-open-cover 1.5s ease-out backwards;
-  	animation-delay: 1s;
-  */
-  transform-style: preserve-3d;
-  transform: rotateX(-60deg);
+  transform-origin: 50% 168px;
   transform-origin: 130px 168px;
+  animation: laptop-open-cover 1s ease-in;
+  transform-style: preserve-3d;
+  transform: rotateX(-90deg);
+  animation-fill-mode: forwards;
 }
 
-/* line 141, ../_sass/_animation.scss */
+/* line 144, ../_sass/_animation.scss */
 .angle-bracket, #slash {
   transform-origin: center 104px;
 }
 
-/* line 144, ../_sass/_animation.scss */
+/* line 147, ../_sass/_animation.scss */
 .angle-bracket {
   animation: grow 0.5s ease-out backwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
-/* line 148, ../_sass/_animation.scss */
+/* line 151, ../_sass/_animation.scss */
 #slash {
   animation: turn 0.5s ease-out backwards;
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 
 /* responsive layout */
