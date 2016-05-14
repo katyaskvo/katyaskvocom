@@ -3240,7 +3240,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: scale(1);
   }
 }
-/* line 17, ../_sass/_animation.scss */
+/* line 16, ../_sass/_animation.scss */
 .pine {
   transform: scale(0);
   animation-duration: 0.5s;
@@ -3248,44 +3248,92 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   fill: #059154;
 }
 
-/* line 23, ../_sass/_animation.scss */
+/* line 22, ../_sass/_animation.scss */
 #pine-l {
   transform-origin: 65px 224px;
 }
 
-/* line 26, ../_sass/_animation.scss */
+/* line 25, ../_sass/_animation.scss */
 #pine-m {
   animation-delay: 0.5s;
   transform-origin: 171px 179px;
 }
 
-/* line 30, ../_sass/_animation.scss */
+/* line 29, ../_sass/_animation.scss */
 #pine-s {
   animation-delay: 1s;
   transform-origin: 116px 66px;
 }
 
-/* line 34, ../_sass/_animation.scss */
+/* line 33, ../_sass/_animation.scss */
 #pine-s1 {
   animation-delay: 1.5s;
   animation-duration: 0.3s;
   transform-origin: 176px 49px;
 }
 
-/* line 39, ../_sass/_animation.scss */
+/* line 38, ../_sass/_animation.scss */
 #pine-s2 {
   animation-delay: 1.8s;
   animation-duration: 0.3s;
   transform-origin: 31px 74px;
 }
 
-/* line 44, ../_sass/_animation.scss */
+/* line 43, ../_sass/_animation.scss */
 .pine {
   animation-name: tree-grow;
+  animation-fill-mode: forwards;
 }
 
-/* line 47, ../_sass/_animation.scss */
-.pine {
+@keyframes gear-big-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+@keyframes gear-medium-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes gear-small-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-270deg);
+  }
+}
+/* line 75, ../_sass/_animation.scss */
+.gear {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  fill: #940F2D;
+  transform-origin: 50% 50%;
+}
+
+/* line 81, ../_sass/_animation.scss */
+#gear-big {
+  animation-name: gear-big-rotate;
+}
+
+/* line 84, ../_sass/_animation.scss */
+#gear-medium {
+  animation-name: gear-medium-rotate;
+}
+
+/* line 87, ../_sass/_animation.scss */
+#gear-small {
+  animation-name: gear-small-rotate;
+}
+
+/* line 91, ../_sass/_animation.scss */
+.gear {
   animation-fill-mode: forwards;
 }
 
@@ -3311,7 +3359,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: scale(1);
   }
 }
-/* line 76, ../_sass/_animation.scss */
+/* line 119, ../_sass/_animation.scss */
 #heart-big, #heart-small {
   transform-origin: 50% 50%;
   transform: scale(0);
@@ -3319,19 +3367,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation-timing-function: ease-out;
 }
 
-/* line 82, ../_sass/_animation.scss */
+/* line 125, ../_sass/_animation.scss */
 #heart-big {
   animation-name: heart-beat;
 }
 
-/* line 85, ../_sass/_animation.scss */
+/* line 128, ../_sass/_animation.scss */
 #heart-small {
   animation-name: heart-beat;
   animation-delay: 1.5s;
   transform-origin: 253px 25px;
 }
 
-/* line 90, ../_sass/_animation.scss */
+/* line 133, ../_sass/_animation.scss */
 #heart-big, #heart-small {
   animation-fill-mode: forwards;
 }
@@ -3369,7 +3417,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: rotate(720deg) scale(1);
   }
 }
-/* line 129, ../_sass/_animation.scss */
+/* line 172, ../_sass/_animation.scss */
 .svg-container {
   width: 260px;
   height: 225px;
@@ -3377,7 +3425,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   perspective: 450px;
 }
 
-/* line 136, ../_sass/_animation.scss */
+/* line 179, ../_sass/_animation.scss */
 #laptop-cover {
   transform-origin: 50% 168px;
   transform-origin: 130px 168px;
@@ -3387,18 +3435,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation-fill-mode: forwards;
 }
 
-/* line 144, ../_sass/_animation.scss */
+/* line 187, ../_sass/_animation.scss */
 .angle-bracket, #slash {
   transform-origin: center 104px;
 }
 
-/* line 147, ../_sass/_animation.scss */
+/* line 190, ../_sass/_animation.scss */
 .angle-bracket {
   animation: grow 0.5s ease-out backwards;
   animation-delay: 1s;
 }
 
-/* line 151, ../_sass/_animation.scss */
+/* line 194, ../_sass/_animation.scss */
 #slash {
   animation: turn 0.5s ease-out backwards;
   animation-delay: 1.2s;
