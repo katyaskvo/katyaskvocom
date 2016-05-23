@@ -3391,7 +3391,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   75% {
     transform: rotateX(0deg);
   }
-  90% {
+  80% {
     transform: rotateX(10deg);
   }
   100% {
@@ -3418,35 +3418,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* line 172, ../_sass/_animation.scss */
-.svg-container {
+.animation-container {
   width: 260px;
   height: 225px;
   position: relative;
-  perspective: 450px;
+  perspective-origin: 50% 100px;
+  margin: 0 auto;
+}
+/* line 179, ../_sass/_animation.scss */
+.animation-container svg {
+  position: relative;
+  z-index: 2;
+}
+/* line 183, ../_sass/_animation.scss */
+.animation-container #laptop-cover-container {
+  z-index: 1;
+  perspective: 474px;
+  width: 259px;
+  height: 126px;
+  display: inline-block;
+  transform-style: preserve-3d;
+  position: relative;
+  perspective-origin: bottom;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+/* line 195, ../_sass/_animation.scss */
+.animation-container #laptop-cover-container .laptop-cover {
+  width: 194px;
+  height: 124px;
+  background: black;
+  border: 7px solid lightgray;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  left: 33px;
+  transform-origin: 126px 126px;
+  transform: rotateX(0deg);
 }
 
-/* line 179, ../_sass/_animation.scss */
-#laptop-cover {
+/* line 211, ../_sass/_animation.scss */
+.laptop-cover {
   transform-origin: 50% 168px;
   transform-origin: 130px 168px;
   animation: laptop-open-cover 1s ease-in;
-  transform-style: preserve-3d;
-  transform: rotateX(-90deg);
+  transform: rotateX(-10deg) translateZ(30px);
   animation-fill-mode: forwards;
+  display: block;
+  transform-style: preserve-3d;
+  width: 200px;
+  position: absolute;
 }
 
-/* line 187, ../_sass/_animation.scss */
+/* line 222, ../_sass/_animation.scss */
 .angle-bracket, #slash {
   transform-origin: center 104px;
 }
 
-/* line 190, ../_sass/_animation.scss */
+/* line 225, ../_sass/_animation.scss */
 .angle-bracket {
   animation: grow 0.5s ease-out backwards;
   animation-delay: 1s;
 }
 
-/* line 194, ../_sass/_animation.scss */
+/* line 229, ../_sass/_animation.scss */
 #slash {
   animation: turn 0.5s ease-out backwards;
   animation-delay: 1.2s;

@@ -142,7 +142,7 @@ $gear-color: #940F2D;
 	75% {
 		transform: rotateX(0deg);
 	}
-	90% {
+	80% {
 		transform: rotateX(10deg);
 	}
 	100% {
@@ -169,20 +169,55 @@ $gear-color: #940F2D;
 	}
 }
 
-.svg-container { 
-  width: 260px;
-  height: 225px;
-  position: relative;
-  perspective: 450px;
+.animation-container { 
+	width: 260px;
+	height: 225px;
+	position: relative;
+	perspective-origin: 50% 100px;
+	margin: 0 auto;
+	
+	svg {
+		position: relative;
+		z-index: 2;
+	}
+	#laptop-cover-container {
+		z-index: 1;
+		perspective: 474px;
+		width: 259px;
+		height: 126px;
+		display: inline-block;
+		transform-style: preserve-3d;
+		position: relative;
+		perspective-origin: bottom;
+		position: absolute;
+		top: 45px;
+		left: 0;
+		.laptop-cover {
+			width: 194px;
+			height: 124px;
+			background: black;
+			border: 7px solid lightgray;
+			border-radius: 4px 4px 0 0;
+			position: absolute;
+			left: 33px;
+			transform-origin: 126px 126px;
+			transform: rotateX(0deg);
+		}
+	}
 }
 
-#laptop-cover {
+
+
+.laptop-cover {
 	transform-origin: 50% 168px;
 	transform-origin: 130px 168px;	
 	animation: laptop-open-cover 1s ease-in;
-	transform-style: preserve-3d;
-	transform: rotateX(-90deg);
+	transform: rotateX(-10deg) translateZ(30px);
 	animation-fill-mode: forwards;
+	display: block;		
+	transform-style: preserve-3d;
+	width: 200px;
+	position: absolute;
 }
 .angle-bracket, #slash {
 	transform-origin: center 104px;
