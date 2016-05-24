@@ -868,6 +868,7 @@ article {
 				color: $black;
 				text-align: center;
 				font-size: 0.875em;
+				font-family: $lato;
 				@include transition-property(all);
 				@include transition-duration(0.3s);
 				@extend .fa;
