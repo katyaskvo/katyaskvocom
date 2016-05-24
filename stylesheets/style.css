@@ -3232,6 +3232,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+@keyframes flip-cover {
+  0% {
+    z-index: 1;
+    transform: rotateY(180deg) translateX(82px);
+  }
+  100% {
+    transform: rotateY(0deg) translateX(82px);
+  }
+}
+@keyframes move-to-center {
+  0% {
+    transform: translateX(0px);
+  }
+  90% {
+    transform: translateX(-90px);
+  }
+  100% {
+    transform: translateX(-85px);
+  }
+}
+/* line 26, ../_sass/_animation.scss */
+#cover-container, #page {
+  width: 170px;
+  height: 223px;
+  position: relative;
+  display: block;
+}
+
+/* line 32, ../_sass/_animation.scss */
+#page, #spring, #band, #text {
+  transform: translateX(82px);
+}
+
+/*
+#cover {
+	-webkit-backface-visibility: hidden;
+	@include backface-visibility(hidden);
+}
+*/
+/* line 42, ../_sass/_animation.scss */
+#cover-back, #cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 48, ../_sass/_animation.scss */
+#cover-back, #cover {
+  transform: rotateY(180deg) translateX(82px);
+  transform-origin: 7px 0;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-name: flip-cover;
+  animation-fill-mode: forwards;
+}
+
+/* line 57, ../_sass/_animation.scss */
+#notebook {
+  animation-name: move-to-center;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes tree-grow {
   0% {
     transform: scale(0);
@@ -3240,7 +3305,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: scale(1);
   }
 }
-/* line 16, ../_sass/_animation.scss */
+/* line 78, ../_sass/_animation.scss */
 .pine {
   transform: scale(0);
   animation-duration: 0.5s;
@@ -3248,38 +3313,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   fill: #059154;
 }
 
-/* line 22, ../_sass/_animation.scss */
+/* line 84, ../_sass/_animation.scss */
 #pine-l {
   transform-origin: 65px 224px;
 }
 
-/* line 25, ../_sass/_animation.scss */
+/* line 87, ../_sass/_animation.scss */
 #pine-m {
   animation-delay: 0.5s;
   transform-origin: 171px 179px;
 }
 
-/* line 29, ../_sass/_animation.scss */
+/* line 91, ../_sass/_animation.scss */
 #pine-s {
   animation-delay: 1s;
   transform-origin: 116px 66px;
 }
 
-/* line 33, ../_sass/_animation.scss */
+/* line 95, ../_sass/_animation.scss */
 #pine-s1 {
   animation-delay: 1.5s;
   animation-duration: 0.3s;
   transform-origin: 176px 49px;
 }
 
-/* line 38, ../_sass/_animation.scss */
+/* line 100, ../_sass/_animation.scss */
 #pine-s2 {
   animation-delay: 1.8s;
   animation-duration: 0.3s;
   transform-origin: 31px 74px;
 }
 
-/* line 43, ../_sass/_animation.scss */
+/* line 105, ../_sass/_animation.scss */
 .pine {
   animation-name: tree-grow;
   animation-fill-mode: forwards;
@@ -3309,7 +3374,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: rotate(-270deg);
   }
 }
-/* line 75, ../_sass/_animation.scss */
+/* line 137, ../_sass/_animation.scss */
 .gear {
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
@@ -3317,22 +3382,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform-origin: 50% 50%;
 }
 
-/* line 81, ../_sass/_animation.scss */
+/* line 143, ../_sass/_animation.scss */
 #gear-big {
   animation-name: gear-big-rotate;
 }
 
-/* line 84, ../_sass/_animation.scss */
+/* line 146, ../_sass/_animation.scss */
 #gear-medium {
   animation-name: gear-medium-rotate;
 }
 
-/* line 87, ../_sass/_animation.scss */
+/* line 149, ../_sass/_animation.scss */
 #gear-small {
   animation-name: gear-small-rotate;
 }
 
-/* line 91, ../_sass/_animation.scss */
+/* line 153, ../_sass/_animation.scss */
 .gear {
   animation-fill-mode: forwards;
 }
@@ -3359,7 +3424,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: scale(1);
   }
 }
-/* line 119, ../_sass/_animation.scss */
+/* line 181, ../_sass/_animation.scss */
 #heart-big, #heart-small {
   transform-origin: 50% 50%;
   transform: scale(0);
@@ -3367,19 +3432,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation-timing-function: ease-out;
 }
 
-/* line 125, ../_sass/_animation.scss */
+/* line 187, ../_sass/_animation.scss */
 #heart-big {
   animation-name: heart-beat;
 }
 
-/* line 128, ../_sass/_animation.scss */
+/* line 190, ../_sass/_animation.scss */
 #heart-small {
   animation-name: heart-beat;
   animation-delay: 1.5s;
   transform-origin: 253px 25px;
 }
 
-/* line 133, ../_sass/_animation.scss */
+/* line 195, ../_sass/_animation.scss */
 #heart-big, #heart-small {
   animation-fill-mode: forwards;
 }
@@ -3417,7 +3482,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: rotate(720deg) scale(1);
   }
 }
-/* line 172, ../_sass/_animation.scss */
+/* line 234, ../_sass/_animation.scss */
 .animation-container {
   width: 260px;
   height: 225px;
@@ -3425,12 +3490,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   perspective-origin: 50% 100px;
   margin: 0 auto;
 }
-/* line 179, ../_sass/_animation.scss */
+/* line 241, ../_sass/_animation.scss */
 .animation-container svg {
   position: relative;
   z-index: 2;
 }
-/* line 183, ../_sass/_animation.scss */
+/* line 245, ../_sass/_animation.scss */
 .animation-container #laptop-cover-container {
   z-index: 1;
   perspective: 474px;
@@ -3444,7 +3509,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 45px;
   left: 0;
 }
-/* line 195, ../_sass/_animation.scss */
+/* line 257, ../_sass/_animation.scss */
 .animation-container #laptop-cover-container .laptop-cover {
   width: 194px;
   height: 124px;
@@ -3455,33 +3520,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 33px;
   transform-origin: 126px 126px;
   transform: rotateX(0deg);
-}
-
-/* line 211, ../_sass/_animation.scss */
-.laptop-cover {
-  transform-origin: 50% 168px;
-  transform-origin: 130px 168px;
   animation: laptop-open-cover 1s ease-in;
-  transform: rotateX(-10deg) translateZ(30px);
   animation-fill-mode: forwards;
-  display: block;
   transform-style: preserve-3d;
-  width: 200px;
-  position: absolute;
 }
 
-/* line 222, ../_sass/_animation.scss */
+/* line 273, ../_sass/_animation.scss */
 .angle-bracket, #slash {
   transform-origin: center 104px;
 }
 
-/* line 225, ../_sass/_animation.scss */
+/* line 276, ../_sass/_animation.scss */
 .angle-bracket {
   animation: grow 0.5s ease-out backwards;
   animation-delay: 1s;
 }
 
-/* line 229, ../_sass/_animation.scss */
+/* line 280, ../_sass/_animation.scss */
 #slash {
   animation: turn 0.5s ease-out backwards;
   animation-delay: 1.2s;

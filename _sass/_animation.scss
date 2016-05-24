@@ -1,5 +1,67 @@
 // SVG animation
 
+// BLOG
+
+@keyframes flip-cover {
+	0% {
+		z-index: 1;
+		transform: rotateY(180deg) translateX(82px);
+	}
+	100% {
+		transform: rotateY(0deg) translateX(82px);
+	}
+}
+@keyframes move-to-center {
+	0% {
+		transform: translateX(0px)
+	}
+	90% {
+		transform: translateX(-90px)
+	}
+	100% {
+		transform: translateX(-85px)
+	}
+}
+
+#cover-container, #page {
+	width: 170px;
+	height: 223px;
+	position: relative;
+	display: block;	
+}
+#page, #spring, #band, #text {
+	transform: translateX(82px);
+}
+
+/*
+#cover {
+	-webkit-backface-visibility: hidden;
+	@include backface-visibility(hidden);
+}
+*/
+#cover-back, #cover {
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+#cover-back, #cover {
+	transform: rotateY(180deg) translateX(82px);
+	transform-origin: 7px 0;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-name: flip-cover;
+	animation-fill-mode: forwards;
+}
+
+#notebook {
+	animation-name: move-to-center;
+	animation-delay: 0s;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
 
 // BIO
 
@@ -202,22 +264,11 @@ $gear-color: #940F2D;
 			left: 33px;
 			transform-origin: 126px 126px;
 			transform: rotateX(0deg);
+			animation: laptop-open-cover 1s ease-in;
+			animation-fill-mode: forwards;
+			transform-style: preserve-3d;
 		}
 	}
-}
-
-
-
-.laptop-cover {
-	transform-origin: 50% 168px;
-	transform-origin: 130px 168px;	
-	animation: laptop-open-cover 1s ease-in;
-	transform: rotateX(-10deg) translateZ(30px);
-	animation-fill-mode: forwards;
-	display: block;		
-	transform-style: preserve-3d;
-	width: 200px;
-	position: absolute;
 }
 .angle-bracket, #slash {
 	transform-origin: center 104px;
