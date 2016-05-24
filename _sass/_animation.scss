@@ -142,12 +142,15 @@ $gear-color: #940F2D;
 }
 #gear-big {
 	animation-name: gear-big-rotate;
+	-moz-transform-origin: 93px 107px;
 }
 #gear-medium {
 	animation-name: gear-medium-rotate;
+	-moz-transform-origin: 227px 160px;
 }
 #gear-small {
 	animation-name: gear-small-rotate;
+	-moz-transform-origin: 205px 45px;
 }
 
 .gear {
