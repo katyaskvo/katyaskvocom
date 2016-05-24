@@ -235,7 +235,7 @@ $gear-color: #940F2D;
 }
 
 .animation-container { 
-	width: 260px;
+	width: 360px;
 	height: 225px;
 	position: relative;
 	perspective-origin: 50% 100px;
@@ -256,7 +256,7 @@ $gear-color: #940F2D;
 		perspective-origin: bottom;
 		position: absolute;
 		top: 45px;
-		left: 0;
+		left: 50px;
 		.laptop-cover {
 			width: 194px;
 			height: 124px;
