@@ -69,10 +69,10 @@ svg: <svg xmlns="http://www.w3.org/2000/svg" width="291.892" height="229.019" vi
 	<section class="resent-projects">
 		<h4>Recent Projects</h4>
 		<ul>
-			<li><a href="../projects/katyaskvo/">katyaskvo.com</a></li>
-			<li><a href="../projects/vedomatic/">vedomatic.com</a></li>
-			<li><a href="../projects/kazyamazya/">kazyamazya.com</a></li>
-			<li><a href="../projects/courier/">courier.com</a></li>
+			<li><a href="/work/katyaskvo/">katyaskvo.com</a></li>
+			<li><a href="/work/vedomatic/">vedomatic.com</a></li>
+			<li><a href="/work/kazyamazya/">kazyamazya.com</a></li>
+			<li><a href="/work/courier/">courier.com</a></li>
 		</ul>
 	</section>
 	<section>
