@@ -3,7 +3,7 @@ title: "before web development"
 date: 2016-04-06 15:39:49 -0800
 image: kotikey-fashion/kotikey-fashion-1.jpg
 ---
-I had a dream to become a fashion designer when I was a child. My dream has been transformed since than. But anyway it was a fun time and here are some pictures of my fashion :)
+I had a dream to become a fashion designer when I was a child. My dream has been transformed since than. But anyway it was fun time and here are some pictures the old time.
 
 ![kotikey fashion]({{ site.blog_assets }}/kotikey-fashion/kotikey-fashion-1.jpg)
 
