@@ -238,7 +238,11 @@ $gear-color: #940F2D;
 }
 
 .animation-container { 
+<<<<<<< HEAD
 	width: 100%;
+=======
+	width: 360px;
+>>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
 	height: 225px;
 	position: relative;
 	perspective-origin: 50% 100px;
@@ -259,8 +263,12 @@ $gear-color: #940F2D;
 		perspective-origin: bottom;
 		position: absolute;
 		top: 45px;
+<<<<<<< HEAD
 		left: 50%;
 		margin-left: -130px;
+=======
+		left: 50px;
+>>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
 		.laptop-cover {
 			width: 194px;
 			height: 124px;

@@ -3490,7 +3490,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 240, ../_sass/_animation.scss */
 .animation-container {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 360px;
+>>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
   height: 225px;
   position: relative;
   perspective-origin: 50% 100px;
@@ -3513,8 +3517,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   perspective-origin: bottom;
   position: absolute;
   top: 45px;
+<<<<<<< HEAD
   left: 50%;
   margin-left: -130px;
+=======
+  left: 50px;
+>>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
 }
 /* line 264, ../_sass/_animation.scss */
 .animation-container #laptop-cover-container .laptop-cover {
