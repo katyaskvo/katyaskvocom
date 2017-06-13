@@ -30,7 +30,7 @@
 	width: 170px;
 	height: 223px;
 	position: relative;
-	display: block;	
+	display: block;
 }
 #page, #spring, #band, #text {
 	transform: translateX(82px);
@@ -74,7 +74,7 @@ $pine-color: #059154;
 		transform: scale(0);
 	}
 	100% {
-		transform: scale(1); 
+		transform: scale(1);
 	}
 }
 
@@ -169,19 +169,19 @@ $gear-color: #940F2D;
   }
   40% {
 	opacity: 1;
-	transform: scale(1.05); 
+	transform: scale(1.05);
   }
   58% {
-	transform: scale(0.8); 
+	transform: scale(0.8);
   }
   70% {
-	transform: scale(1.05); 
+	transform: scale(1.05);
   }
   88% {
 	transform: scale(0.8);
   }
   100% {
-	transform: scale(1); 
+	transform: scale(1);
   }
 }
 #heart-big, #heart-small {
@@ -237,17 +237,13 @@ $gear-color: #940F2D;
 	}
 }
 
-.animation-container { 
-<<<<<<< HEAD
+.animation-container {
 	width: 100%;
-=======
-	width: 360px;
->>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
 	height: 225px;
 	position: relative;
 	perspective-origin: 50% 100px;
 	margin: 0 auto;
-	
+
 	svg {
 		position: relative;
 		z-index: 2;
@@ -263,12 +259,9 @@ $gear-color: #940F2D;
 		perspective-origin: bottom;
 		position: absolute;
 		top: 45px;
-<<<<<<< HEAD
 		left: 50%;
 		margin-left: -130px;
-=======
-		left: 50px;
->>>>>>> 534913ddede6d41b0b0d4bb6baa2cec8313bcabe
+
 		.laptop-cover {
 			width: 194px;
 			height: 124px;
