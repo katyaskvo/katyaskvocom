@@ -1,5 +1,6 @@
 // Screen
 // ======
+
 @import "normalize";
 @import "compass/reset";
 @import "compass/css3/box";
@@ -9,9 +10,9 @@
 @import "compass";
 @import "grids";
 @import "susy";
-@import "breakpoint"; 
-@import "/Library/Ruby/Gems/2.0.0/gems/font-awesome-sass-4.3.1/assets/stylesheets/font-awesome";
-@import "/Library/Ruby/Gems/2.0.0/gems/font-awesome-sass-4.3.1/assets/stylesheets/font-awesome-compass.scss";
+@import "breakpoint";
+@import "/Library/Ruby/Gems/2.0.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome";
+@import "/Library/Ruby/Gems/2.0.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome-compass.scss";
 @import "fonts";
 @import "mixins";
 @import "animation";
@@ -178,7 +179,7 @@ body {
 			background-color: $blog;
 			@include flexbox((order: 2));
 			.icon {
-				background-image: url(../img/notebook.svg); 
+				background-image: url(../img/notebook.svg);
 			}
 		}
 		&#work {
@@ -186,14 +187,14 @@ body {
 			@include flexbox((order: 4));
 			height: 34%;
 			.icon {
-				background-image: url(../img/laptop.svg); 
+				background-image: url(../img/laptop.svg);
 			}
 		}
 		&#bio {
 			background-color: $bio;
 			@include flexbox((order: 5));
 			.icon {
-				background-image: url(../img/pines.svg); 
+				background-image: url(../img/pines.svg);
 			}
 		}
 		&#resume {
@@ -201,14 +202,14 @@ body {
 			@include flexbox((order: 3));
 			height: 34%;
 			.icon {
-				background-image: url(../img/gears.svg); 
+				background-image: url(../img/gears.svg);
 			}
 		}
 		&#ilike {
 			background-color: $ilike;
 			@include flexbox((order: 6));
 			.icon {
-				background-image: url(../img/heart.svg); 
+				background-image: url(../img/heart.svg);
 			}
 		}
 		a{
@@ -261,8 +262,8 @@ body {
 			}
 		}
 	}
-	
-	
+
+
 	@media screen and (min-width: $break-small) and (orientation: landscape) {
 		section {
 		width: 33%;
@@ -341,7 +342,7 @@ body {
 		}
 	}
 	@media screen and (min-width: $break-large){
-	
+
 	}
 
 }
@@ -402,9 +403,9 @@ header {
 	}
 	nav {
 		font-size: 0.875rem;
-		@include display-flex;   
+		@include display-flex;
 		@include flex-basis(100%);
-		
+
 		a {
 			@include flex(1);
 			text-align: center;
@@ -424,7 +425,7 @@ header {
 		&.blog {
 			background: $blog;
 		}
-		
+
 		.wrap {
 			height: 100%;
 			padding-top: 50px;
@@ -478,28 +479,28 @@ article {
 	h1 {
 	@include adjust-font-size-to($h1-fz);
 	}
-	
+
 	h2 {
 	@include adjust-font-size-to($h2-fz);
 	margin: rhythm(0.5) 0;
 	}
-	
+
 	h3 {
 		@include adjust-font-size-to($h3-fz);
 		margin: rhythm(1) 0;
 		text-transform: uppercase;
 		position: relative;
 	}
-	
+
 	h4 {
 		@include adjust-font-size-to($h4-fz);
 		margin: rhythm(1) 0 0 0;
 	}
-	
+
 	h5 {
 		@include adjust-font-size-to($h5-fz);
 	}
-	
+
 	h6 {
 		@include adjust-font-size-to($h6-fz);
 		font-weight: 300;
@@ -569,7 +570,7 @@ article {
 						background-color: $text-dark;
 					}
 				}
-				
+
 			}
 		}
 		.date {
@@ -580,11 +581,11 @@ article {
 
 .pagination {
 	text-align: center;
-	
+
 	.pagination-wrapper {
 		@include clearfix;
 		display: inline-block;
-	
+
 		 > * {
 			line-height: 30px;
 			height: 30px;
@@ -666,14 +667,14 @@ article {
 			}
 			h3 {
 				@extend .fa-info-circle;
-			}		
-	
+			}
+
 			.info {
 			@include background-image(linear-gradient($work-gradient1, $work-gradient2, $work-gradient3));
 				a {
 					&:hover {
 						background: $work;
-						border-color: $work;	
+						border-color: $work;
 					}
 				}
 			}
@@ -833,7 +834,7 @@ article {
 						display: block;
 						height: auto !important;
 						@include transition-all(0.1s);
-						
+
 						padding: gutter(4);
 						display: block;
 						p {
@@ -841,7 +842,7 @@ article {
 							margin-bottom: 10px;
 						}
 						&:nth-child(2n + 2) {
-							
+
 						}
 					}
 				}
@@ -862,7 +863,7 @@ article {
 		.subsections section * {
 			padding-left: 10px;
 		}
-			
+
 		.resent-projects {
 			a {
 				color: $black;
@@ -909,7 +910,7 @@ article {
 					&:nth-last-child(-n + 5) {
 						margin-bottom: 0;
 					}
-					
+
 				}
 			}
 			.experience {
@@ -925,7 +926,7 @@ article {
 					@include clearfix;
 				}
 				li {
-					@include span(3 of 6);	
+					@include span(3 of 6);
 					position: relative;
 					margin-bottom: gutter(6);
 					padding: gutter();
@@ -933,16 +934,16 @@ article {
 					@include border-radius(4px);
 					@include transition-property(all);
 					@include transition-duration(0.3s);
-					
+
 					&:hover {
 						background: darken($gray, 10%);
 					}
-					
+
 					a {
 						width: 100%;
 						line-height: 30px;
 						color: $black;
-						
+
 					}
 					&:nth-child(2n + 2) {
 						@include span(3 of 6 last);
@@ -1029,7 +1030,7 @@ article {
 				&:before {
 					color: $ilike;
 				}
-			}	
+			}
 		}
 	}
 }
@@ -1039,7 +1040,7 @@ article {
 	padding-bottom: gutter();
 	li {
 		background: $white;
-		
+
 		margin: gutter(5) 0 0 0;
 		text-align: center;
 		@include border-radius(4px);
@@ -1051,7 +1052,7 @@ article {
 			padding: 20px 20px 0 20px;
 			display: inline-block;
 			@include transition-all(0.3s);
-		
+
 			picture {
 				width: 100%;
 				height: auto;
@@ -1060,7 +1061,7 @@ article {
 				position: relative;
 				float: left;
 				overflow: hidden;
-				
+
 				&:before {
 					content: "";
 					position: absolute;
@@ -1069,12 +1070,12 @@ article {
 					left: 0;
 					right: 0;
 					@include box-shadow($shadow 0 0 3px inset);
-				} 	
+				}
 				img {
 					vertical-align: middle;
 					width: 100%;
 					float: left;
-					
+
 				}
 			}
 			h3 {
@@ -1161,7 +1162,7 @@ article {
 				color: $white;
 			}
 		}
-		
+
 		&:hover {
 			.info {
 				bottom: 0;
@@ -1175,10 +1176,10 @@ article {
 				font-weight: 400;
 				@include transition-property(all);
 				@include transition-duration(0.3s);
-			
+
 				&:hover {
 					-webkit-user-select: auto;
-					-webkit-touch-callout: auto;        
+					-webkit-touch-callout: auto;
 				}
 			}
 		}
@@ -1261,7 +1262,7 @@ $yellow: #ffbd2e;
 	  background-color: $yellow;
 	  margin-right: 6px;
 	  line-height: 30px;
-	  
+
 	  &:first-child {
 		  background-color: $red;
 	  }
@@ -1330,10 +1331,10 @@ $yellow: #ffbd2e;
 	}
 	&.rocket {
 		@extend .fa-rocket;
-	}	
+	}
 	&.email {
 		@extend .fa-envelope;
-	}		
+	}
 	&.green{
 		background: darken($black, 7%);
 		&:hover {
