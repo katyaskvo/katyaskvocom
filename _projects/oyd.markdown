@@ -20,7 +20,5 @@ project_specifics:
  - "Responsive layout"
 
 project_screenshots:
- - "oops_you_died1.png"
- - "oops_you_died2.png"
  - "oops_you_died3.png"
 ---
