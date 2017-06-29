@@ -15,6 +15,7 @@ svg: <div class="animation-container"><svg xmlns="http://www.w3.org/2000/svg" wi
 	<section>
 		<h4>Skills</h4>
 		<ul class="skills">
+			<li>iOS</li>
 			<li>HTML</li>
 			<li>CSS</li>
 			<li>Sass</li>
@@ -24,9 +25,11 @@ svg: <div class="animation-container"><svg xmlns="http://www.w3.org/2000/svg" wi
 			<li>SQL</li>
 			<li>Agile</li>
 			<li>TDD</li>
-			<li>Web Design</li>
-			<li>Photoshop</li>
-			<li>Illustrator</li>
+			<li>UX Design</li>
+			<li>UI Design</li>
+			<li>Sketch</li>
+			<li>Illustration</li>
+			<li>Animation</li>
 			<li>Typography</li>
 			<li>Wordpress</li>
 			<li>Git</li>
@@ -35,11 +38,16 @@ svg: <div class="animation-container"><svg xmlns="http://www.w3.org/2000/svg" wi
 	<section class="experience">
 		<h4>Experience</h4>
 		<div>
+		<section>
+			<div class="date">2016-present</div>
+			<h5>Freelance</h5>
+			<h6>iOS and Web developer</h6>
+		</section>
 			<section>
-				<div class="date">2015-present</div>
+				<div class="date">2015-2016</div>
 				<h5>Signal Zero</h5>
 				<h6>Software engineer</h6>
-				<p>As part of software development team, I'm responsible for building and maintaining software in the environment that was set up by famous <a href="http://pivotal.io/labs">Pivotal Labs</a> (agile development, pair programming, сontinuous deployment, test-driven development, short one-week iterations).
+				<p>As part of software development team, I'm responsible for building and maintaining software in the environment that was set up by famous <a href="http://pivotal.io/labs">Pivotal Labs</a> (agile development, pair programming, continuous deployment, test-driven development, short one-week iterations).</p>
 			</section>
 			<section>
 				<div class="date">2014-2015</div>
@@ -70,9 +78,9 @@ svg: <div class="animation-container"><svg xmlns="http://www.w3.org/2000/svg" wi
 		<h4>Recent Projects</h4>
 		<ul>
 			<li><a href="/work/katyaskvo/">katyaskvo.com</a></li>
-			<li><a href="/work/vedomatic/">vedomatic.com</a></li>
+			<li><a href="/work/caffeine_machine/">caffeine machine</a></li>
 			<li><a href="/work/kazyamazya/">kazyamazya.com</a></li>
-			<li><a href="/work/courier/">courier.com</a></li>
+			<li><a href="/work/bibika/">bibika.katyaskvo.com</a></li>
 		</ul>
 	</section>
 	<section>

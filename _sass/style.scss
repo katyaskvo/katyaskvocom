@@ -907,9 +907,9 @@ article {
 							right: 0;
 						}
 					}
-					&:nth-last-child(-n + 5) {
-						margin-bottom: 0;
-					}
+					// &:nth-last-child(-n + 5) {
+					// 	margin-bottom: 0;
+					// }
 
 				}
 			}
@@ -962,13 +962,13 @@ article {
 						background-image: url('/img/work/katyaskvo/katyaskvo.png');
 					}
 					&:nth-child(2) a:before {
-						background-image: url('/img/work/vedomatic/vedomatic.jpg');
+						background-image: url('/img/work/caffeine_machine/caffeine_machine.png');
 					}
 					&:nth-child(3) a:before {
 						background-image: url('/img/work/kazyamazya/kazyamazya.jpg');
 					}
 					&:nth-child(4) a:before {
-						background-image: url('/img/work/courier/courier.jpg');
+						background-image: url('/img/work/bibika_website/bibika.png');
 					}
 				}
 			}

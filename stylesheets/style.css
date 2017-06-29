@@ -5050,10 +5050,6 @@ article img {
     left: auto;
     right: 0;
   }
-  /* line 910, ../_sass/style.scss */
-  .resume article .skills li:nth-last-child(-n + 5) {
-    margin-bottom: 0;
-  }
   /* line 917, ../_sass/style.scss */
   .resume article .experience h5 {
     float: left;
@@ -5123,7 +5119,7 @@ article img {
   }
   /* line 964, ../_sass/style.scss */
   .resume article .resent-projects li:nth-child(2) a:before {
-    background-image: url("/img/work/vedomatic/vedomatic.jpg");
+    background-image: url("/img/work/caffeine_machine/caffeine_machine.png");
   }
   /* line 967, ../_sass/style.scss */
   .resume article .resent-projects li:nth-child(3) a:before {
@@ -5131,7 +5127,7 @@ article img {
   }
   /* line 970, ../_sass/style.scss */
   .resume article .resent-projects li:nth-child(4) a:before {
-    background-image: url("/img/work/courier/courier.jpg");
+    background-image: url("/img/work/bibika_website/bibika.png");
   }
 }
 @media screen and (min-width: 480px) {
