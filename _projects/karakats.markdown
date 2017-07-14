@@ -1,6 +1,6 @@
 ---
 title:  "Karakats"
-project_name: "Karakats"
+project_name: "karakats"
 image: "karakats.png"
 image_retina: "karakats@2x.png"
 project_url: "itunes.com/app/karakats/"
